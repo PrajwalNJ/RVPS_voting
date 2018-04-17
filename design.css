@@ -1,0 +1,163 @@
+body{
+    background: rgba(255, 215, 0, 0.41);
+}
+nav{
+    margin-left:50px;
+}
+.navbar-brand{
+    text-indent: 60px;
+    /*font-size: 15px;*/
+    border-right: .5px solid rgba(220,220,220,0.6);
+}
+#logo{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    height: 40px;
+}
+#top_menu li{
+    border-right: .5px solid rgba(220,220,220,0.6);
+}
+#top_menu li a:hover{
+    background: rgba(220, 220, 220, 0.6);
+}
+
+#sidebar_button{
+    font-size: 20px;
+    padding: 12px;
+    width: 50px;
+    height: 51px;
+    position: fixed;
+    border-right: .5px solid rgba(220,220,220,0.6);
+    background: rgb(37, 37, 37);
+}
+#sidebar_button a{
+    color:white;
+    display: block;
+    transition-duration: .5s;
+}
+#sidebar_button a.active{
+    transform: rotateY(180deg);
+    padding-left: 6px;
+}
+#sidebar{
+    border-top: .5px solid rgba(220,220,220,0.6);
+    z-index: 1;
+    padding: 0px;
+    position: fixed;
+    top: 51px;
+    width: 250px;
+    height:100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition-duration: .5s;
+    background: rgb(37, 37, 37);
+}
+#wrapper.active #sidebar{
+    width: 50px;
+}
+.sidebar-menu{
+    padding: 0px;
+    list-style: none;
+}
+.sidebar-menu li{
+    text-indent: 8px;
+    line-height: 40px;
+}
+.sidebar-menu li a{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.sidebar-menu li a:hover{
+    background: rgba(220, 220, 220, 0.6);
+}
+
+#wrapper.active .sidebar-menu dummy{
+    display: none;
+}
+span:not(.icon-bar){
+    margin: 0px 5px 0px 0px;
+    padding: 0px;
+}
+#wrapper.active span:not(.icon-bar){
+    text-indent: 0px;
+    margin: 2px;
+    font-size: 25px;
+}
+#admin{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+#sidebar #login{
+    width: 80px;
+    padding: 5px;
+    margin: 15px 5px 10px;
+    transition-duration: .5s;
+}
+#wrapper.active #sidebar #login{
+    margin-left: 2px;
+    width: 45px;
+    transition-duration: .5s;
+}
+#admin h2{
+    margin: 20px 8px 10px;
+    color: white;
+}
+#wrapper.active #admin h2{
+    display: none;
+}
+
+
+
+#page-content{
+    width: 100%;
+    padding: 20px 15px;
+    transition-duration: .5s;
+}
+#wrapper.active #page-content{
+    padding-left: 225px;
+}
+
+
+
+
+#school{
+    margin: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+
+#school-cap{
+    margin: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+#school-vcap{
+    margin: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+
+
+
+#popup .dropdown-list select{
+    width: 50px;
+}
+
+
+/*#page-content{
+    position: absolute;
+    top: 51px;
+    left: 250px;
+    padding: 25px 15px;
+    transition-duration: .5s;
+}
+#wrapper.active #page-content{
+    left: 50px;
+    padding-left: 10px;
+}
+
+
