@@ -25,7 +25,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img alt="" class="img-circle" src="rv.png" id="logo"/>
+                    <img alt="" class="img-circle" src="images/rv.png" id="logo"/>
                     R V PUBLIC SCHOOL
                 </a>
             </div>
@@ -40,59 +40,33 @@
 
     <div id="wrapper">
         <div id="sidebar">
-            <div id="admin">
-                <img src="login.png" id="login" class="img-circle"/>
-                <h2>Admin</h2>
-            </div>
+            <a href="admin.html" style="text-decoration: none;">
+                <div id="admin">
+                    <img src="images/login.png" id="login" class="img-circle"/>
+                    <h2>Admin</h2>
+                </div>
+            </a>
             <ul class="sidebar-menu">
-                <li><a href="#"><span class="glyphicon glyphicon-pencil"></span><dummy> Change Password</dummy></a></li>
-                <li><a href="" data-toggle="modal" data-target="#popup"><span class="glyphicon glyphicon-hand-up"></span><dummy> Cast Vote</dummy></a></li>
+                <li><a href="" data-toggle="modal" data-target="#voting-modal"><span class="glyphicon glyphicon-hand-up"></span><dummy> Cast Vote</dummy></a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-blackboard"></span><dummy> Display Votes</dummy></a></li>
             </ul>
         </div>
 
-        <!--<div id="page-content">
-          <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
 
-                        <div id="school">
-                            <img src="school.PNG" class="img-circle"/>
-                            <div id="school-cap">
-                                <form>
-                                    <div><input type="radio" name="school_cap"><img src="login.png" class="img-circle"></div>
-                                    <div><input type="radio" name="school_cap"><img src="login.png" class="img-circle"></div>
-                                    <div><input type="radio" name="school_cap"><img src="login.png" class="img-circle"></div>
-                                </form>
-                            </div>
-                            <div id="school-vcap">
-                                <form>
-                                    <div><input type="radio" name="school_vcap"><img src="login.png"></div>
-                                    <div><input type="radio" name="school_vcap"><img src="login.png"></div>
-                                    <div><input type="radio" name="school_vcap"><img src="login.png"></div>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>-->
     </div>
 
-
-    <div class="modal fade" id="popup">
+    <div class="modal fade" id="voting-modal">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h3 class="modal-title">Enter Your Details</h3>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="padding-left: 35px;">
                     <div class="form-group">
-                        <input type="password" class="form-control" id="roll-number" placeholder="Enter Roll Number" required>
+                        <input type="password" class="form-control" id="roll-number" placeholder="Enter Roll Number" style="width: 220px;" required>
                     </div>
-                    <div class="dropdown-list form-group">
+                    <div class="form-group">
                         <select class="selectpicker" data-live-search="true" id="class">
                             <option disabled selected>Select Class</option>
                             <option>1</option>
@@ -107,7 +81,7 @@
                             <option>10</option>
                         </select>
                     </div>
-                    <div class="dropdown-list form-group">
+                    <div class="form-group">
                         <select class="selectpicker" data-live-search="true" id="section">
                             <option disabled selected>Select Section</option>
                             <option>A</option>
@@ -117,7 +91,7 @@
                             <option>None</option>
                         </select>
                     </div>
-                    <div class="dropdown-list form-group">
+                    <div class="form-group">
                         <select class="selectpicker" data-live-search="true" id="house">
                             <option disabled selected>Select House</option>
                             <option>Aryabhatta</option>
@@ -126,10 +100,10 @@
                             <option>Sushrutha</option>
                         </select>
                     </div>
+                </div>
 
-                    <div class="modal-footer">
-                        <button class="btn btn-primary" onclick="votingDisplay()">Next</button>
-                    </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="votingDisplay()">Next</button>
                 </div>
             </div>
         </div>
@@ -147,23 +121,6 @@
             e.preventDefault();
             $("#top_menu li").toggleClass("active");
         });
-
-        function votingDisplay(){
-            var error="";
-            if(isNaN(document.getElementById('roll-number').value))
-                error=error+"Invalid Entry for Roll Number !"+ <br/>;
-            if(document.getElementById('class').options[document.getElementById('section').selectedIndex].text=="Select Class"){
-                error+="'Select your class !'+<br/>";
-            }
-            if(document.getElementById('section').options[document.getElementById('section').selectedIndex].text=="Select Section"){
-                error+="'Select your section !'+<br/>";
-            }
-            if(document.getElementById('house').options[document.getElementById('house').selectedIndex].text=="Select House"){
-                error+="'Select your house !'+<br/>";
-            }
-            alert(error);
-        }
-
     </script>
 </body>
 </html>
