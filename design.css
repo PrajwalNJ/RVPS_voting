@@ -49,9 +49,15 @@ nav{
     width: 250px;
     height:100%;
     overflow-y: hidden;
-    overflow-x: hidden;
     transition-duration: .5s;
     background: rgb(37, 37, 37);
+}
+#sidebar.sidebar-admin{
+    height: fit-content;
+    border: none;
+    position: relative;
+    padding: 10px 20px;
+    margin: 30px auto;
 }
 #wrapper.active #sidebar{
     width: 50px;
@@ -119,45 +125,3 @@ span:not(.icon-bar){
 #wrapper.active #page-content{
     padding-left: 225px;
 }
-
-
-
-
-#school{
-    margin: 25px;
-    display: -webkit-box;
-    -webkit-box-orient: horizontal;
-}
-
-#school-cap{
-    margin: 25px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-}
-#school-vcap{
-    margin: 25px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-}
-
-
-
-
-#popup .dropdown-list select{
-    width: 50px;
-}
-
-
-/*#page-content{
-    position: absolute;
-    top: 51px;
-    left: 250px;
-    padding: 25px 15px;
-    transition-duration: .5s;
-}
-#wrapper.active #page-content{
-    left: 50px;
-    padding-left: 10px;
-}
-
-
