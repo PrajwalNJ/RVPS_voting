@@ -57,6 +57,7 @@ CREATE TABLE `contestant_details` (
 CREATE TABLE `voting_details` (
   `student_roll_no` varchar(2) COLLATE utf8_unicode_ci NOT NULL COMMENT 'this column is used to store the roll no of the students who are voting which will be hashed',
   `student_class` int(10) NOT NULL COMMENT 'this column is used to  store the class of the student ',
+  `student_section` varchar(1) COLLATE utf8_unicode_ci NOT NULL COMMENT 'this column is used to store the section of the student'
   `contestant_unique_id` varchar(15) COLLATE utf8_unicode_ci NOT NULL COMMENT 'this column is used to store the unique id of the contestant  who has been casted a vote by the student'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
