@@ -16,7 +16,7 @@
         <a href="#"><span id="left-btn" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>
     </div>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" >
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_menu">
@@ -52,6 +52,122 @@
             </ul>
         </div>
 
+        <div id="page-content">
+            <!--<img id="background" src="images/rv.png" class="img-circle">-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="cast-vote">
+                            <div id="cast-vote_default">
+                                <h2 style="text-align: center;">Cast Your Vote</h2>
+                            </div>
+                            <div id="school" class="election-type">
+                                <img src="images/school.PNG" class="img-circle medium-image"/>
+                                <div class="captains">
+                                    <h2><em>Captains</em></h2>
+                                    <form>
+                                        <div><input type="radio" name="school_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('school_cap',0)"></div>
+                                        <div><input type="radio" name="school_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('school_cap',1)"></div>
+                                        <div><input type="radio" name="school_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('school_cap',2)"></div>
+                                    </form>
+                                </div>
+                                <div class="vice-captains">
+                                    <h2><em>Vice Captains</em></h2>
+                                    <form>
+                                        <div><input type="radio" name="school_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('school_vcap',0)"></div>
+                                        <div><input type="radio" name="school_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('school_vcap',1)"></div>
+                                        <div><input type="radio" name="school_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('school_vcap',2)"></div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="aryabhatta" class="election-type">
+                                <img src="images/aryabhatta.PNG" class="img-circle medium-image"/>
+                                <div class="captains">
+                                    <h2><em>Captains</em></h2>
+                                    <form>
+                                        <div><input type="radio" name="aryabhatta_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('aryabhatta_cap',0)"></div>
+                                        <div><input type="radio" name="aryabhatta_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('aryabhatta_cap',1)"></div>
+                                        <div><input type="radio" name="aryabhatta_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('aryabhatta_cap',2)"></div>
+                                    </form>
+                                </div>
+                                <div class="vice-captains">
+                                    <h2><em>Vice Captains</em></h2>
+                                    <form>
+                                        <div><input type="radio" name="aryabhatta_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('aryabhatta_vcap',0)"></div>
+                                        <div><input type="radio" name="aryabhatta_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('aryabhatta_vcap',1)"></div>
+                                        <div><input type="radio" name="aryabhatta_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('aryabhatta_vcap',2)"></div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="bhaskara" class="election-type">
+                                <img src="images/bhaskara.PNG" class="img-circle medium-image"/>
+                                <div class="captains">
+                                    <h2><em>Captains</em></h2>
+                                    <form>
+                                        <div><input type="radio" name="bhaskara_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('bhaskara_cap',0)"></div>
+                                        <div><input type="radio" name="bhaskara_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('bhaskara_cap',1)"></div>
+                                        <div><input type="radio" name="bhaskara_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('bhaskara_cap',2)"></div>
+                                    </form>
+                                </div>
+                                <div class="vice-captains">
+                                    <h2><em>Vice Captains</em></h2>
+                                    <form>
+                                        <div><input type="radio" name="bhaskara_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('bhaskara_vcap',0)"></div>
+                                        <div><input type="radio" name="bhaskara_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('bhaskara_vcap',1)"></div>
+                                        <div><input type="radio" name="bhaskara_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('bhaskara_vcap',2)"></div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="charaka" class="election-type">
+                                <img src="images/charaka.PNG" class="img-circle medium-image"/>
+                                <div class="captains">
+                                    <h2><em>Captains</em></h2>
+                                    <form>
+                                        <div><input type="radio" name="charaka_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('charaka_cap',0)"></div>
+                                        <div><input type="radio" name="charaka_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('charaka_cap',1)"></div>
+                                        <div><input type="radio" name="charaka_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('charaka_cap',2)"></div>
+                                    </form>
+                                </div>
+                                <div class="vice-captains">
+                                    <h2><em>Vice Captains</em></h2>
+                                    <form>
+                                        <div><input type="radio" name="charaka_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('charaka_vcap',0)"></div>
+                                        <div><input type="radio" name="charaka_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('charaka_vcap',1)"></div>
+                                        <div><input type="radio" name="charaka_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('charaka_vcap',2)"></div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="sushrutha" class="election-type">
+                                <img src="images/sushrutha.PNG" class="img-circle medium-image"/>
+                                <div class="captains">
+                                    <h2><em>Captains</em></h2>
+                                    <form>
+                                        <div><input type="radio" name="sushrutha_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('sushrutha_cap',0)"></div>
+                                        <div><input type="radio" name="sushrutha_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('sushrutha_cap',1)"></div>
+                                        <div><input type="radio" name="sushrutha_cap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('sushrutha_cap',2)"></div>
+                                    </form>
+                                </div>
+                                <div class="vice-captains">
+                                    <h2><em>Vice Captains</em></h2>
+                                    <form>
+                                        <div><input type="radio" name="sushrutha_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('sushrutha_vcap',0)"></div>
+                                        <div><input type="radio" name="sushrutha_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('sushrutha_vcap',1)"></div>
+                                        <div><input type="radio" name="sushrutha_vcap"><img src="images/login.png" class="img-circle small-image" onclick="checkRadioButton('sushrutha_vcap',2)"></div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
@@ -109,18 +225,7 @@
         </div>
     </div>
 
+    <script src="main.js"></script>
 
-
-    <script>
-        $("#sidebar_button").click(function(e){
-            e.preventDefault();
-            $("#wrapper").toggleClass("active");
-            $("#sidebar_button a").toggleClass("active");
-        });
-        $("#top_menu li").click(function (e) {
-            e.preventDefault();
-            $("#top_menu li").toggleClass("active");
-        });
-    </script>
 </body>
 </html>
