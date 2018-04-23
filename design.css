@@ -114,14 +114,86 @@ span:not(.icon-bar){
 #wrapper.active #admin h2{
     display: none;
 }
-
-
-
 #page-content{
     width: 100%;
-    padding: 20px 15px;
+    position: absolute;
+    top: 52px;
+    padding: 15px 15px 15px 275px;
     transition-duration: .5s;
 }
 #wrapper.active #page-content{
-    padding-left: 225px;
+    padding: 20px 100px;
 }
+
+
+
+
+
+
+
+#cast-vote_default{
+    display: none;
+}
+.election-type{
+    padding-right: 50px;
+    margin: 5px auto;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+    width: fit-content;
+    display: none;
+}
+.election-type h2{
+    text-decoration: underline;
+}
+.captains{
+    margin: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.vice-captains{
+    margin: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.small-image{
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+.medium-image{
+    margin: 25px;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+/*#page-content{
+    position: absolute;
+    top: 51px;
+    left: 250px;
+    padding: 25px 15px;
+    transition-duration: .5s;
+}
+#wrapper.active #page-content{
+    left: 50px;
+    padding-left: 10px;
+}
+
+
+#background{
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 50%;
+    left: 60%;
+}
+#wrapper.active #background{
+    top: 50%;
+    transition-duration: .5s;
+}
+
+
